@@ -38,18 +38,21 @@ export const CounterRed = () => {
     return (
         <div>
             <h2>Contador: { counter }</h2>
+
             <button
                 className="btn btn-outline-primary"
                 onClick={ () => dispatch({ type: 'increment' }) }
             >
                 +1
             </button>
+
             <button
                 className="btn btn-outline-secondary"
                 onClick={ () => dispatch({ type: 'decrement' }) }
             >
                 -1
             </button>
+            
             <button
                 className="btn btn-outline-danger"
                 onClick={ () => dispatch({ type: 'custom', payload: 100 }) }
